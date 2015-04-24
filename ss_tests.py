@@ -58,7 +58,7 @@ def sendEmail(driver, Space = ssdata.exampleSpace, emails = None, From = None, S
     url = e.get_attribute('href')
     expurl = ssdata.spaceurl % {'id' : str(Space)}
     if not(expurl ==  url):
-        raise(Exception('Did not find correct back button href\nExpected "%s", got "%s"' %(expurl, url)))
+        raise(Exception('Did not find correct back button href. \nExpected "%s", got "%s"' %(expurl, url)))
 
     # If these were supplied, fill out the corresponding fields
     # It's necessary to use 'if X != None' rather than 'if X'
