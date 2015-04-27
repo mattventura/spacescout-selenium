@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+testnetid = ('username', 'password') # User and pass
+
+import mailcheck
+
+# Format for a mailUser constructor is:
+# mailUser(imap username, imap password, imap server, receiving address)
+emails = { 
+    'external1' : mailcheck.mailUser('mailuser', 'mailpass', 'mail.somesite.net', 'mailuser@somesite.net'),
+    'gmail1' : mailcheck.mailUser('uwuser@uw.edu', 'mailpass', 'imap.gmail.com', 'uwuser@uw.edu')
+}
